@@ -57,36 +57,56 @@ $(function(){
 	$("#b10").click(function(){
 		$("#p4").after("<h1> Don't really understand why it's done this way </h1>  ");
 	});
-	
 		 
 	//wrap
-	
+	$("#b11").click(function(){
+		$("#p5").wrap("<div class='pinky'></div>  ");
+	});
 		 
 	//addClass
-	
+	$("#b12").click(function(){
+		$("#p5").addClass("pinky  ");
+	});
 		 
 	//clone
-	
+	$("#b13").click(function(){
+		$("li").clone().appendTo("ul");
+
+	});
 		 
 	//fadeOut
-	
+	$("#b14").click(function(){
+		$("#p6").fadeOut(1000);
+	});
 		 
 	//fadeIn
-	
+	$("#b15").click(function(){
+		$("#p6").fadeIn(1000);
+	});
 		  
 	//fadeToggle
-	
+	$("#b16").click(function(){
+		$("#p6").toggle(1000);
+	});
 		  
 	//slideUp
-	
+	$("#b17").click(function(){
+		$(".box-content").slideUp(1000);
+	});
 		 
 	//slideDown
-	
+	$("#b18").click(function(){
+		$(".box-content").slideDown(1000);
+	})
 
 	 //slideToggle
-	 
+	 $(".box-header").click(function(){
+	 	$(".box-content").slideToggle(1000);
+	 })
 		  
 	//animate
-	
+	$("#b19").click(function(){
+		$(".box-animate").animate( {height:"200px"}, 500);
+	});
 		 
 });
